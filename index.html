@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<title>vuetest</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <!-- <button @click="call">callback</button> -->
+            <h2>{{posts}} </h2>
+        </div>
+        <div class="cart">
+            <p>Cart Items({{ cart.length }})</p>
+
+        </div>
+        <product :prime="prime" @add-to-cart="updateCart" @remove-from-cart="removeFrmCart">
+            <productdetails></productdetails>
+        </product>
+        <!-- <product></product> -->
+    </div>
+    <script src="dist/build.js"></script>
+</body>
+
+</html>
